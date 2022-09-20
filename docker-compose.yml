@@ -1,6 +1,7 @@
 version: '3.1'
 services:
   nginx:
+    container_name: meu_site_nginx
     image: nginx:latest
     ports:
       - "80:80"
@@ -10,3 +11,8 @@ services:
       - ./.nginx/conf/:/etc/nginx/conf.d/:ro
       - ./.certbot/www:/var/www/certbot/:ro
       - ./src:/var/www/html
+  certbot:
+    container_name: meu_site_certbot
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw
