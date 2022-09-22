@@ -9,7 +9,7 @@ button {
     width: 448px;
     height: 40px;
 
-    background: #437642;
+    background: #466446;
     border-radius: 25px;
 
     border: none;
@@ -21,10 +21,6 @@ button {
     font-weight: bold;
     font-size: 14px;
 
-    text-decoration-line: none;
-    text-decoration: none;
-}
-a {
     text-decoration-line: none;
     text-decoration: none;
 }

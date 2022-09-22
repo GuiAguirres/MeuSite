@@ -1,6 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 @import "./button.css";
-@import "./style-cellphone.css";
+@import "./links.css";
 
 body {
     font-family: 'SF Pro Display', sans-serif;
@@ -22,7 +22,8 @@ body {
     padding: 40px 100px;
     gap: 40px;
 
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
 
     background: rgba(0, 0, 0, 0.37);
     backdrop-filter: blur(25px);
