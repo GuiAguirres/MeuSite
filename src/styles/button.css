@@ -6,7 +6,8 @@ button {
     padding: 11px 48px;
     gap: 10px;
 
-    width: 448px;
+    width: 100%;
+    max-width: 448px;
     height: 40px;
 
     background: #466446;
