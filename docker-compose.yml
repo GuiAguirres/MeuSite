@@ -18,3 +18,14 @@ services:
     volumes:
       - ./.certbot/www/:/var/www/certbot/:rw
       - ./.certbot/conf/:/etc/letsencrypt/:rw
+  sqlserver:
+    container_name: sqlserver
+    image: "mcr.microsoft.com/azure-sql-edge"
+    restart: always
+    ports:
+      - "1433:1433"
+    # volumes:
+    #   - "./.data/mssql:/var/opt/mssql:rw"
+    environment:
+      SA_PASSWORD: "Guilherme@2023"
+      ACCEPT_EULA: "Y"
