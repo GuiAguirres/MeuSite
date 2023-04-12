@@ -17,3 +17,9 @@ Para fixar a instalação do certificado:
 ``` shell
 docker-compose run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ -d guiaguirres.dev.br
 ```
+
+Para renovar o certificado:
+
+``` shell
+docker-compose run --rm  certbot renew
+```
